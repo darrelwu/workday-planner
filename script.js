@@ -32,7 +32,7 @@ $("#hour15 .entry").val(localStorage.getItem("hour15"));
 $("#hour16 .entry").val(localStorage.getItem("hour16"));
 $("#hour17 .entry").val(localStorage.getItem("hour17"));
 
-// updates time block color codes with if statements based on current time
+// updates time block color codes with if statements in comparison to current time
 function scheduleUpdate() {
     var currentHour = moment().hour();
   
@@ -40,16 +40,16 @@ function scheduleUpdate() {
       var scheduleHour = parseInt($(this).attr("id").split("hour")[1]);
   
       if (scheduleHour < currentHour) {
-        $(this).addClass("past");
+        $(this).addClass("past"); //makes it grey
       
       } else if (scheduleHour === currentHour) {
-        $(this).removeClass("past");
-        $(this).addClass("present");
+        $(this).removeClass("past"); //grey
+        $(this).addClass("present"); //makes it red
       
       } else {
-        $(this).removeClass("past");
-        $(this).removeClass("present");
-        $(this).addClass("future");
+        $(this).removeClass("past"); //makes it grey
+        $(this).removeClass("present"); //makes it red
+        $(this).addClass("future"); //makes it green
   
       }
     });
