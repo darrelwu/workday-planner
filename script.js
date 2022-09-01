@@ -10,5 +10,4 @@ $(document).ready(function () {
         $('#currentDay').html(moment().format("MMM Do, YYYY, h:mm:ss"));
       }
       setInterval(updateTime, 1000);
-
-)}
+    })
