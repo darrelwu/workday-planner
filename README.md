@@ -11,11 +11,13 @@ My motivation today is create a work day scheduler that allows a user to save ev
 * When refresh the page the saved events persist
 
 
-
+<img src="./assets/workday_schedule.jpg">
 
 ## Usage
 The usage of this source code is to demonstrate how a workday planner can be created using moment.js and jQuery. 
 
+## Live URL
+https://darrelwu.github.io/workday-planner/
 
 ## License
 Copyright Darrel Wu 2022
