@@ -21,6 +21,7 @@ $(document).ready(function () {
 // saves the task input and timestamp into local storage
 localStorage.setItem(time, task);
 });
+
 // gets items saved from local storage
 $("#hour09 .entry").val(localStorage.getItem("hour09"));
 $("#hour10 .entry").val(localStorage.getItem("hour10"));
@@ -43,7 +44,7 @@ function scheduleUpdate() {
         $(this).addClass("past"); //makes it grey
       
       } else if (scheduleHour === currentHour) {
-        $(this).removeClass("past"); //grey
+        $(this).removeClass("past"); //makes it grey
         $(this).addClass("present"); //makes it red
       
       } else {
